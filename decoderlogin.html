@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Login For Decoder
+        </title>
+		<link rel="stylesheet" type="text/css" href="login.css">
+        <script>
+        function checkLogin(x)
+	{
+		if ((x.UserId.value !="Decoder")||(x.Pass.value !="123456789022"))
+		{
+			alert("Invalid Login");
+			return false;
+        }
+        else
+			
+			location="decoder.html"
+	}
+		</script>
+    </head>
+    <body>
+
+        <div class="login-page">
+            <form class="login-form">
+                <legend>
+                   Decoder Login
+                </legend>
+              <input type="text" placeholder="User ID" name="UserId"/>
+              <input type="password" placeholder="Password" name="Pass"/>
+			  <input class="button" type="button" value="Login" onClick="checkLogin(this.form)"/>
+            </form>
+        </div>
+    </body>
+</html>
